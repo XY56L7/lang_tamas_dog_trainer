@@ -1,0 +1,94 @@
+/* Hero.css */
+.hero-header {
+    background: url('C:\Users\Martin\Desktop\Projects\lang-tamas\public\images\hero2.jpg') top right no-repeat;
+    background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
+    background-position: center calc(100% + 300px); /* A kép 50px-rel lejjebb */
+    min-height: 600px; /* Növeld a magasságot, hogy a kép teljesen látható legyen */
+    display: flex;
+    align-items: center; /* Tartalom középre igazítása függőlegesen */
+    justify-content: center; /* Tartalom középre igazítása vízszintesen */
+    position: relative; /* Pozicionálás a gradient overlay-hez */
+}
+
+/* Gradient overlay a háttérkép sötétítéséhez */
+.hero-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Fekete gradient */
+    z-index: 1; /* Az overlay a háttérkép fölé kerül */
+}
+
+/* A tartalom konténerje */
+.hero-header .container {
+    position: relative;
+    z-index: 2; /* A szöveg az overlay fölé kerül */
+}
+
+/* Szöveg stílusai */
+.hero-header h1,
+.hero-header h2 {
+    color: #ffffff; /* Fehér szöveg */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Szöveg árnyéka */
+}
+
+.hero-header h1 {
+    font-size: 3.5rem; /* Nagyobb betűméret */
+    font-weight: 700; /* Vastag betűk */
+    margin-bottom: 20px; /* Térköz a cím és az alcím között */
+}
+
+.hero-header h2 {
+    font-size: 2rem; /* Közepes betűméret */
+    font-weight: 600; /* Közepesen vastag betűk */
+}
+
+/* Telefonos nézet (767.98px és kisebb) */
+@media (max-width: 767.98px) {
+    .hero-header {
+        min-height: 400px; /* Kisebb magasság telefonos nézetben */
+        background: url('C:\Users\Martin\Desktop\Projects\lang-tamas\public\images\Tomi.jpg') top right no-repeat; /* Tomi.jpg háttérkép */
+        background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
+        background-position: center; /* A kép középre igazítása */
+        align-items: flex-end; /* Tartalom lentebb pozicionálása telefonos nézetben */
+        padding-bottom: 50px; /* További térköz lent */
+    }
+
+    .hero-header h1 {
+        font-size: 2.5rem; /* Kisebb betűméret telefonos nézetben */
+    }
+
+    .hero-header h2 {
+        font-size: 1.5rem; /* Kisebb betűméret telefonos nézetben */
+    }
+}
+
+/* Alapértelmezett stílusok a fejléc logóhoz */
+.header-logo {
+    height: 50px; /* Alapértelmezett magasság mobil nézetben */
+    width: auto;
+    transition: height 0.3s ease; /* Sima átmenet a méretváltozáshoz */
+}
+
+/* Asztali nézet (992px és nagyobb) */
+@media (min-width: 992px) {
+    .header-logo {
+        height: 100px; /* Nagyobb magasság asztali nézetben */
+    }
+}
+
+/* Sticky fejléc stílusok */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sticky-top.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Átlátszó fehér háttér */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása */
+}

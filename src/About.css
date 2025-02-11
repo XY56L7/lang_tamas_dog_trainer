@@ -1,0 +1,14 @@
+/* About.css */
+.nav-pills .nav-link {
+    background-color: transparent !important; /* Átlátszó háttér */
+    color: #7AB730 !important; /* Zöld szöveg */
+    border-radius: 0.25rem; /* Kerekített sarkok */
+    margin: 0 5px; /* Kis térköz a gombok között */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Sima átmenet */
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #7AB730 !important; /* Zöld háttér az aktív gombhoz */
+    color: white !important; /* Fehér szöveg */
+  }
+  
