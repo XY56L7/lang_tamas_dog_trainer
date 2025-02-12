@@ -15,14 +15,22 @@ const Footer = () => {
                             <p className="mb-0">
                                 <i className="bi bi-telephone text-primary me-2"></i>
                                 +36 70 624 4713
-                                </p>
+                            </p>
                         </div>
 
                         {/* Copyright szöveg */}
                         <div className="copyright-text-wrap">
                             <p className="mb-0">
                                 <span className="copyright-text">
-                                    Copyright © {new Date().getFullYear()} <a href="#" className="text-white">Láng Tamás</a>. Minden jog fenntartva.
+                                    Copyright © {new Date().getFullYear()}{' '}
+                                    <a 
+                                        href="https://pal-martin-portfolio.vercel.app/" 
+                                        className="text-white"
+                                        target="_blank" // Új lapon nyílik meg
+                                        rel="noopener noreferrer" // Biztonsági okokból
+                                    >
+                                        Pál Martin
+                                    </a>. Minden jog fenntartva.
                                 </span>
                             </p>
                         </div>

@@ -1,18 +1,30 @@
-/* styles.css vagy egyéni CSS fájl */
+/* TopBar.css */
 .custom-topbar {
-    padding-top: 0.1rem; /* Nagyon kis padding felül */
-    padding-bottom: 0.1rem; /* Nagyon kis padding alul */
+    padding-top: 0.25rem; /* Nagyon kis padding felül */
+    padding-bottom: 0.25rem; /* Nagyon kis padding alul */
     line-height: 1.2; /* A sorok közötti tér csökkentése */
+    background-color: #f8f9fa; /* Háttérszín beállítása */
 }
 
 .custom-topbar .fs-1 {
-    font-size: 1.5rem !important; /* Az ikonok méretének csökkentése */
+    font-size: 1.25rem !important; /* Az ikonok méretének csökkentése */
 }
 
 .custom-topbar h6 {
-    font-size: 0.8rem; /* A címek méretének csökkentése */
+    font-size: 0.75rem; /* A címek méretének csökkentése */
+    margin-bottom: 0.25rem; /* Térköz csökkentése */
 }
 
 .custom-topbar span {
-    font-size: 0.8rem; /* A szöveg méretének csökkentése */
+    font-size: 0.75rem; /* A szöveg méretének csökkentése */
+}
+
+.custom-topbar .col-lg-4 {
+    padding-top: 0.25rem; /* Padding csökkentése */
+    padding-bottom: 0.25rem; /* Padding csökkentése */
+}
+
+.custom-topbar .border-start,
+.custom-topbar .border-end {
+    border-color: rgba(0, 0, 0, 0.1) !important; /* Szegély színének beállítása */
 }

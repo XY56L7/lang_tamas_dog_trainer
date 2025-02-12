@@ -1,13 +1,13 @@
 /* Hero.css */
 .hero-header {
-    position: relative; /* Hozzáadva */
     background: url('./hero2.jpg') top right no-repeat;
-    background-size: cover;
-    background-position: center calc(100% + 300px);
-    min-height: 700px;
+    background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
+    background-position: center calc(100% + 300px); /* A kép 50px-rel lejjebb */
+    min-height: 700px; /* Növeld a magasságot, hogy a kép teljesen látható legyen */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Tartalom középre igazítása függőlegesen */
+    justify-content: center; /* Tartalom középre igazítása vízszintesen */
+    position: relative; /* Pozicionálás a gradient overlay-hez */
 }
 
 /* Gradient overlay a háttérkép sötétítéséhez */
@@ -59,10 +59,12 @@
 
     .hero-header h1 {
         font-size: 2.5rem; /* Kisebb betűméret telefonos nézetben */
+        transform: translateY(-170px); /* 10px-el feljebb mozgatás */
     }
 
     .hero-header h2 {
         font-size: 1.5rem; /* Kisebb betűméret telefonos nézetben */
+        transform: translateY(-10px); /* 10px-el feljebb mozgatás */
     }
 }
 

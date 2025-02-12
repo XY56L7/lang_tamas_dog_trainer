@@ -22,26 +22,27 @@ const Header = () => {
     }, []);
 
     return (
-        <nav className={`navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar navbar-expand-lg bg-white navbar-light shadow-sm py-2 py-lg-0 px-2 px-lg-0 sticky-top ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 {/* Logó csak asztali nézetben */}
-                <a href="index.html" className="navbar-brand ms-lg-5 d-none d-lg-block">
+                <a href="index.html" className="navbar-brand ms-lg-3 d-none d-lg-block">
                     <h1 className="m-0 text-uppercase text-dark">
-                    <img 
-                        src={logo} 
-                        alt="Láng Tamás logó" 
-                        className="me-3 header-logo" 
-                    />
+                        <img 
+                            src={logo} 
+                            alt="Láng Tamás logó" 
+                            className="me-2 header-logo" 
+                            style={{ height: '70px' }}
+                        />
                     </h1>
                 </a>
 
                 {/* Telefonszám és ikon mobilnézetben */}
                 <div className="d-flex align-items-center d-lg-none">
-                    <div className="phone-icon-circle me-3">
+                    <div className="phone-icon-circle me-2">
                         <i className="navbar-icon bi-telephone-plus"></i>
                     </div>
                     <div className="phone-number-container">
