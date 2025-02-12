@@ -3,7 +3,7 @@ import './Hero.css'; // Egyéni CSS importálása
 
 const Hero = () => {
     return (
-        <div className="container-fluid bg-primary py-lg-5 py-3 mb-lg-5 mb-3 hero-header">
+        <div className="container-fluid py-lg-5 py-3 mb-lg-5 mb-3 hero-header">
             <div className="container py-lg-5 py-3">
                 <div className="row justify-content-start">
                     <div className="col-lg-8 text-center text-lg-start">

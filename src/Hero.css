@@ -45,7 +45,13 @@
     font-size: 2rem; /* Közepes betűméret */
     font-weight: 600; /* Közepesen vastag betűk */
 }
-
+@media (min-width: 750px) and (max-width: 1300px) {
+    .hero-header {
+        background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
+        background-position: center; /* A kép középre igazítása */
+        background-color: #000; /* Fekete háttérszín, ha a kép nem töltődik be */
+    }
+}
 /* Telefonos nézet (767.98px és kisebb) */
 @media (max-width: 767.98px) {
     .hero-header {
