@@ -1,16 +1,16 @@
-/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 .hero-header {
     background: url('./hero2.jpg') top right no-repeat;
-    background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
-    background-position: center calc(100% + 300px); /* A kép 50px-rel lejjebb */
-    min-height: 700px; /* Növeld a magasságot, hogy a kép teljesen látható legyen */
+    background-size: cover;
+    background-position: center calc(100% + 300px);
+    min-height: 700px;
     display: flex;
-    align-items: center; /* Tartalom középre igazítása függőlegesen */
-    justify-content: center; /* Tartalom középre igazítása vízszintesen */
-    position: relative; /* Pozicionálás a gradient overlay-hez */
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-/* Gradient overlay a háttérkép sötétítéséhez */
 .hero-header::before {
     content: "";
     position: absolute;
@@ -18,85 +18,66 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Fekete gradient */
-    z-index: 1; /* Az overlay a háttérkép fölé kerül */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    z-index: 1;
 }
 
-/* A tartalom konténerje */
 .hero-header .container {
     position: relative;
-    z-index: 2; /* A szöveg az overlay fölé kerül */
+    z-index: 2;
 }
 
 /* Szöveg stílusai */
 .hero-header h1,
 .hero-header h2 {
-    color: #ffffff; /* Fehér szöveg */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Szöveg árnyéka */
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif; /* Modern betűtípus */
 }
 
 .hero-header h1 {
-    font-size: 3.5rem; /* Nagyobb betűméret */
+    font-size: 4rem; /* Nagyobb betűméret */
     font-weight: 700; /* Vastag betűk */
-    margin-bottom: 20px; /* Térköz a cím és az alcím között */
+    margin-bottom: 20px;
+    letter-spacing: -1px; /* Betűk közötti tér csökkentése */
+    line-height: 1.2; /* Sorok közötti tér */
 }
 
 .hero-header h2 {
-    font-size: 2rem; /* Közepes betűméret */
+    font-size: 2.5rem; /* Közepes betűméret */
     font-weight: 600; /* Közepesen vastag betűk */
+    letter-spacing: -0.5px; /* Betűk közötti tér csökkentése */
+    line-height: 1.3; /* Sorok közötti tér */
 }
+
+/* Reszponzív stílusok */
 @media (min-width: 750px) and (max-width: 1300px) {
     .hero-header {
-        background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
-        background-position: center; /* A kép középre igazítása */
-        background-color: #000; /* Fekete háttérszín, ha a kép nem töltődik be */
+        background-size: cover;
+        background-position: center;
+        background-color: #000;
     }
 }
-/* Telefonos nézet (767.98px és kisebb) */
+
 @media (max-width: 767.98px) {
     .hero-header {
-        min-height: 400px; /* Kisebb magasság telefonos nézetben */
-        background: url('./TomiHD.png') top right no-repeat; /* Tomi.jpg háttérkép */
-        background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
-        background-position: center; /* A kép középre igazítása */
-        align-items: flex-end; /* Tartalom lentebb pozicionálása telefonos nézetben */
-        padding-bottom: 50px; /* További térköz lent */
+        min-height: 400px;
+        background: url('./TomiHD.png') top right no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: flex-end;
+        padding-bottom: 50px;
     }
 
     .hero-header h1 {
-        font-size: 2.5rem; /* Kisebb betűméret telefonos nézetben */
-        transform: translateY(-170px); /* 10px-el feljebb mozgatás */
+        font-size: 2.5rem;
+        transform: translateY(-170px);
+        line-height: 1.1;
     }
 
     .hero-header h2 {
-        font-size: 1.5rem; /* Kisebb betűméret telefonos nézetben */
-        transform: translateY(-10px); /* 10px-el feljebb mozgatás */
+        font-size: 1.5rem;
+        transform: translateY(-10px);
+        line-height: 1.2;
     }
-}
-
-/* Alapértelmezett stílusok a fejléc logóhoz */
-.header-logo {
-    height: 50px; /* Alapértelmezett magasság mobil nézetben */
-    width: auto;
-    transition: height 0.3s ease; /* Sima átmenet a méretváltozáshoz */
-}
-
-/* Asztali nézet (992px és nagyobb) */
-@media (min-width: 992px) {
-    .header-logo {
-        height: 100px; /* Nagyobb magasság asztali nézetben */
-    }
-}
-
-/* Sticky fejléc stílusok */
-.sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sticky-top.scrolled {
-    background-color: rgba(255, 255, 255, 0.9); /* Átlátszó fehér háttér */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása */
 }
