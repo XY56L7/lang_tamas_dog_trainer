@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import fibi from './fibi3.jpg';
 
 const About = () => {
     return (
@@ -10,7 +11,7 @@ const About = () => {
                         <div className="position-relative h-100">
                             <img
                                 className="position-absolute w-100 h-100 rounded"
-                                src="./images/fibi3.jpg" // Relatív elérési út a public mappából
+                                src={fibi} // Relatív elérési út a public mappából
                                 alt="Rólunk"
                                 style={{ objectFit: 'cover' }}
                             />

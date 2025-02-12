@@ -1,0 +1,18 @@
+/* styles.css vagy egyéni CSS fájl */
+.custom-topbar {
+    padding-top: 0.1rem; /* Nagyon kis padding felül */
+    padding-bottom: 0.1rem; /* Nagyon kis padding alul */
+    line-height: 1.2; /* A sorok közötti tér csökkentése */
+}
+
+.custom-topbar .fs-1 {
+    font-size: 1.5rem !important; /* Az ikonok méretének csökkentése */
+}
+
+.custom-topbar h6 {
+    font-size: 0.8rem; /* A címek méretének csökkentése */
+}
+
+.custom-topbar span {
+    font-size: 0.8rem; /* A szöveg méretének csökkentése */
+}

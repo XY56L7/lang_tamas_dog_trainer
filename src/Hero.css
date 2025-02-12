@@ -1,13 +1,13 @@
 /* Hero.css */
 .hero-header {
-    background: url('./images/hero2.jpg') top right no-repeat;
-    background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
-    background-position: center calc(100% + 300px); /* A kép 50px-rel lejjebb */
-    min-height: 600px; /* Növeld a magasságot, hogy a kép teljesen látható legyen */
+    position: relative; /* Hozzáadva */
+    background: url('./hero2.jpg') top right no-repeat;
+    background-size: cover;
+    background-position: center calc(100% + 300px);
+    min-height: 700px;
     display: flex;
-    align-items: center; /* Tartalom középre igazítása függőlegesen */
-    justify-content: center; /* Tartalom középre igazítása vízszintesen */
-    position: relative; /* Pozicionálás a gradient overlay-hez */
+    align-items: center;
+    justify-content: center;
 }
 
 /* Gradient overlay a háttérkép sötétítéséhez */
@@ -50,7 +50,7 @@
 @media (max-width: 767.98px) {
     .hero-header {
         min-height: 400px; /* Kisebb magasság telefonos nézetben */
-        background: url('./images/Tomi.jpg') top right no-repeat; /* Tomi.jpg háttérkép */
+        background: url('./TomiHD.png') top right no-repeat; /* Tomi.jpg háttérkép */
         background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
         background-position: center; /* A kép középre igazítása */
         align-items: flex-end; /* Tartalom lentebb pozicionálása telefonos nézetben */

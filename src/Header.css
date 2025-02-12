@@ -1,15 +1,16 @@
-/* Alapértelmezett stílusok */
+/* Header.css */
 .sticky-top {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
+    position: absolute; /* Hozzáadva */
+    top: 0; /* Hozzáadva */
+    left: 0; /* Hozzáadva */
+    right: 0; /* Hozzáadva */
+    z-index: 1000; /* Hozzáadva */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 20px; /* Távolság a fejléc és a tartalom között */
-    background-color: rgba(255, 255, 255, 0.9); /* Átlátszó fehér háttér */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása */
-    border-radius: 10px; /* Kerekített sarkok */
-    margin-left: 20px; /* Bal oldali távolság */
-    margin-right: 20px; /* Jobb oldali távolság */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .sticky-top.scrolled {
@@ -69,6 +70,17 @@
     .navbar-light .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
+    }
+
+    /* Telefon ikon elrejtése telefonos nézetben */
+    .phone-icon-circle {
+        display: none !important;
+    }
+
+    /* Logó középre igazítása telefonos nézetben */
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

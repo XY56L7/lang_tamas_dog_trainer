@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import logo from './logo.png';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +31,11 @@ const Header = () => {
                 {/* Logó csak asztali nézetben */}
                 <a href="index.html" className="navbar-brand ms-lg-5 d-none d-lg-block">
                     <h1 className="m-0 text-uppercase text-dark">
-                        <img 
-                            src="./images/logo.png" 
-                            alt="Láng Tamás logó" 
-                            className="me-3 header-logo" 
-                        />
+                    <img 
+                        src={logo} 
+                        alt="Láng Tamás logó" 
+                        className="me-3 header-logo" 
+                    />
                     </h1>
                 </a>
 
