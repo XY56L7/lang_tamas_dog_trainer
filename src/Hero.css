@@ -50,7 +50,7 @@
 @media (max-width: 767.98px) {
     .hero-header {
         min-height: 400px; /* Kisebb magasság telefonos nézetben */
-        background: url('C:\Users\Martin\Desktop\Projects\lang-tamas\public\images\Tomi.jpg') top right no-repeat; /* Tomi.jpg háttérkép */
+        background: url('/images/Tomi.jpg') top right no-repeat; /* Tomi.jpg háttérkép */
         background-size: cover; /* A kép kitölti a rendelkezésre álló területet */
         background-position: center; /* A kép középre igazítása */
         align-items: flex-end; /* Tartalom lentebb pozicionálása telefonos nézetben */
