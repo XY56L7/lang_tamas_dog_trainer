@@ -31,7 +31,7 @@ const Header = () => {
                 <a href="index.html" className="navbar-brand ms-lg-5 d-none d-lg-block">
                     <h1 className="m-0 text-uppercase text-dark">
                         <img 
-                            src="/images/logo.png" 
+                            src="./images/logo.png" 
                             alt="Láng Tamás logó" 
                             className="me-3 header-logo" 
                         />
