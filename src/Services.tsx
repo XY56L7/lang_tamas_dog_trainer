@@ -1,6 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './Services.css';
 
 const Services = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const section = document.getElementById('services-section');
+            // Null check before using getBoundingClientRect
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    setIsVisible(true); // Element is in view
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="container-fluid py-5">
             <div className="container">
@@ -8,8 +29,9 @@ const Services = () => {
                     <h6 style={{ color: '#7AB730' }} className="text-uppercase">Szolgáltatások</h6>
                     <h1 className="display-5 text-uppercase mb-0">Kutyatréning és Gondozási Szolgáltatások</h1>
                 </div>
-                <div className="row g-5">
-                    {[
+
+                <div className={`row g-5 ${isVisible ? 'fade-in' : ''}`} id="services-section">
+                    {[ 
                         { icon: 'flaticon-house', title: 'Kezdő Tréning 🦴', description: 'Stabil alapok a kutyával való kapcsolathoz. Együttműködés, figyelem, laza pórázon sétálás, alap parancsok.' },
                         { icon: 'flaticon-food', title: 'Viselkedés Tréning 🦴', description: 'Problémás viselkedés kezelése: ugrás, húzás, túlzott ugatás. Személyre szabott megoldások.' },
                         { icon: 'flaticon-grooming', title: 'Kutyasuli 🦴', description: 'Csoportos tréning, szocializáció, játék és tanulás együtt. Min. 4, max. 12 résztvevő.' },
