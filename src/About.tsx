@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import fibi from './fibi3.jpg';
-import fibi2 from './fibi2.jpg';
+import random from './random.jpg';
 
 const About = () => {
 
@@ -38,8 +38,8 @@ const About = () => {
     <div className="container-fluid py-5">
       <div className="container">
         {/* First section (image left, text right) */}
-        <div className="row gx-5">
-          <div className="col-lg-5 mb-5 mb-lg-0 fade-in">
+        <div className="row gx-5 bubble-section fade-in">
+          <div className="col-lg-5 mb-5 mb-lg-0">
             <div className="position-relative h-100">
               <img
                 className="position-absolute w-100 h-100 rounded"
@@ -49,7 +49,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="col-lg-7 fade-in">
+          <div className="col-lg-7">
             <div style={{ borderLeft: '5px solid #7AB730' }} className="ps-5 mb-5">
               <h6 style={{ color: '#7AB730' }} className="text-uppercase">Rólunk</h6>
               <h1 className="display-5 text-uppercase mb-0">Kutyáid boldogsága mindig az első! 🐾</h1>
@@ -107,12 +107,12 @@ const About = () => {
         </div>
 
         {/* Second section (image right, text left) */}
-        <div className="row gx-5 flex-row-reverse mt-5 fade-in">
+        <div className="row gx-5 flex-row-reverse mt-5 bubble-section fade-in">
           <div className="col-lg-5 mb-5 mb-lg-0">
             <div className="position-relative h-100">
               <img
                 className="position-absolute w-100 h-100 rounded"
-                src={fibi2}
+                src={random}
                 alt="Képzés"
                 style={{ objectFit: 'cover' }}
               />

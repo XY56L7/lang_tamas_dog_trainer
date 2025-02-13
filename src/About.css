@@ -23,3 +23,59 @@
   background-color: #7AB730 !important; /* Green background for active button */
   color: white !important; /* White text */
 }
+
+/* Styling for the bubble effect */
+.bubble-section {
+  border: 2px solid #7AB730; /* Green border */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  margin-bottom: 30px; /* Space between sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: white; /* White background */
+}
+
+/* Responsive adjustments for mobile view */
+/* About.css */
+/* Responsive adjustments for mobile view */
+@media (max-width: 767.98px) {
+  .bubble-section {
+    padding: 15px; /* Smaller padding for mobile */
+    margin-bottom: 20px; /* Smaller margin for mobile */
+  }
+
+  .display-5 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  h4 {
+    font-size: 1.25rem; /* Smaller font size for mobile */
+  }
+
+  .nav-pills .nav-link {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .tab-content p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  .position-relative {
+    height: auto; /* Auto height for images on mobile */
+    min-height: 200px; /* Minimum height to ensure visibility */
+    margin-bottom: 15px; /* Space below the image */
+  }
+
+  .position-absolute {
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+  .ps-5 {
+    padding-left: 1rem !important; /* Reduce left padding for mobile */
+  }
+
+  .text-uppercase {
+    font-size: 1.5rem; /* Adjust uppercase text size for mobile */
+  }
+}
