@@ -3,7 +3,7 @@ import './Pricing.css';
 
 const Pricing = () => {
     return (
-        <div className="pricing-section">
+        <div className="pricing-section" id='prices-section'>
             <div className="container">
                 <div className="text-center mb-5">
                     <h6 style={{ color: '#7AB730' }} className="text-uppercase">Árazás</h6>

@@ -5,6 +5,34 @@ import logo from './logo.png';
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
+    const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about-section');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToMain = () => {
+        const mainSection = document.getElementById('main-section');
+        if (mainSection) {
+            mainSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToServices = () => {
+        const servicesSection = document.getElementById('services-section');
+        if (servicesSection) {
+            servicesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToPrices = () => {
+        const pricesSection = document.getElementById('prices-section');
+        if (pricesSection) {
+            pricesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50) {
@@ -54,9 +82,10 @@ const Header = () => {
 
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0">
-                        <a href="index.html" className="nav-item nav-link active">KEZDŐLAP</a>
-                        <a href="about.html" className="nav-item nav-link">RÓLAM</a>
-                        <a href="service.html" className="nav-item nav-link">SZOLGÁLTATÁSOK</a>
+                        <a  className="nav-item nav-link active" onClick={scrollToMain} >KEZDŐLAP</a>
+                        <a className="nav-item nav-link" onClick={scrollToAbout}>RÓLAM</a>
+                        <a  className="nav-item nav-link" onClick={scrollToServices}>SZOLGÁLTATÁSOK</a>
+                        <a  className="nav-item nav-link" onClick={scrollToPrices}>ÁRAK</a>
                         <div className="nav-item dropdown">
                             {/* Dropdown tartalom */}
                         </div>

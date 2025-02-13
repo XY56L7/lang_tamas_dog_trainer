@@ -35,7 +35,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container-fluid px-4 py-5">
+    <div className="container-fluid px-4 py-5" id="about-section">
       <div className="container">
         {/* First section (image left, text right) */}
         <div className="row gx-5 bubble-section fade-in">
