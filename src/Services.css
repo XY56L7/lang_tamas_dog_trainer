@@ -1,9 +1,22 @@
-/* Services section animation */
+/* Services.css */
+/* General styles */
+.service-item {
+    border-radius: 15px; /* Lekerekített sarkok */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enyhe árnyék */
+    padding: 20px; /* Belső térköz */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Sima animáció hover esetén */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Enyhe emelkedés hover esetén */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Nagyobb árnyék hover esetén */
+}
+
+/* Fade-in animation */
 .fade-in {
     animation: fadeInUp 3s ease-out forwards; /* Fade and slide up */
 }
 
-/* Define the animation */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -15,10 +28,9 @@
     }
 }
 
-/* Optional: add more specific styles for responsiveness */
+/* Responsive adjustments */
 @media (max-width: 767px) {
-    /* Example: adjust padding or layout for mobile devices */
     .service-item {
-        padding: 15px;
+        padding: 15px; /* Kisebb padding telefonon */
     }
 }
