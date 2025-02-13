@@ -5,7 +5,9 @@
   --light: #F3F3F3;
   --dark: #212121;
 }
-
+body {
+  background: linear-gradient(135deg, #F7FAF4 0%, #E8F5E9 100%);
+}
 [class^=flaticon-]:before,
 [class*=" flaticon-"]:before,
 [class^=flaticon-]:after,
