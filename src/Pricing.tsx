@@ -14,8 +14,8 @@ const Pricing = () => {
                     {/* 1 órás tréning */}
                     <div className="col-md-4">
                         <div className="pricing-card">
-                            <h3>1 órás tréning</h3>
-                            <h2>10.000 Ft</h2>
+                        <h3>1 alkalmas csomag</h3>
+                        <h2>10.000 Ft</h2>
                             <ul>
                                 <li>Egyéni tréning</li>
                                 <li>Alapok fejlesztése</li>
