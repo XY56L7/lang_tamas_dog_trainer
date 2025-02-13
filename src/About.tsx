@@ -35,7 +35,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid px-4 py-5">
       <div className="container">
         {/* First section (image left, text right) */}
         <div className="row gx-5 bubble-section fade-in">
@@ -58,8 +58,8 @@ const About = () => {
               Célom, hogy kutyáid egészségesek, boldogok és jól neveltek legyenek. Tapasztalatommal és szakértelmemmel segítek abban, hogy a kutyáid a legjobb életet élhessék.
             </h4>
             <div className="bg-light p-4">
-              <ul className="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
-                <li className="nav-item w-50" role="presentation">
+              <ul className="nav nav-pills flex-column flex-md-row justify-content-between mb-3" id="pills-tab" role="tablist">
+                <li className="nav-item w-100 w-md-50 mb-2 mb-md-0" role="presentation">
                   <button
                     className="nav-link text-uppercase w-100 active"
                     id="pills-1-tab"
@@ -74,7 +74,7 @@ const About = () => {
                     Küldetésem 🐕
                   </button>
                 </li>
-                <li className="nav-item w-50" role="presentation">
+                <li className="nav-item w-100 w-md-50" role="presentation">
                   <button
                     className="nav-link text-uppercase w-100"
                     id="pills-2-tab"
@@ -127,8 +127,8 @@ const About = () => {
               Szakmai képzéseimen és tréningjeimen segítek a kutyatulajdonosoknak abban, hogy jobban megértsék kutyáikat, és hatékonyabban tudjanak velük kommunikálni.
             </h4>
             <div className="bg-light p-4">
-              <ul className="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
-                <li className="nav-item w-50" role="presentation">
+              <ul className="nav nav-pills flex-column flex-md-row justify-content-between mb-3" id="pills-tab" role="tablist">
+                <li className="nav-item w-100 w-md-50 mb-2 mb-md-0" role="presentation">
                   <button
                     className="nav-link text-uppercase w-100 active"
                     id="pills-3-tab"
@@ -143,7 +143,7 @@ const About = () => {
                     Alapképzés 🐾
                   </button>
                 </li>
-                <li className="nav-item w-50" role="presentation">
+                <li className="nav-item w-100 w-md-50" role="presentation">
                   <button
                     className="nav-link text-uppercase w-100"
                     id="pills-4-tab"
