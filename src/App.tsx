@@ -7,6 +7,7 @@ import Services from './Services';
 
 import Footer from './Footer'; 
 import './styles.css';
+import Pricing from './Pricing';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <Hero />
             <About />
             <Services />
+            <Pricing/>
             <Footer />
         </div>
     );
