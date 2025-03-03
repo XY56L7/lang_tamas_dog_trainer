@@ -25,7 +25,7 @@ const Pricing = () => {
                         </div>
                     </div>
 
-                    {/* 4 alkalmas csomag */}
+                    {}
                     <div className="col-md-4">
                         <div className="pricing-card">
                             <h3>Lorem Ipsum</h3>
@@ -40,7 +40,7 @@ const Pricing = () => {
                         </div>
                     </div>
 
-                    {/* 8 alkalmas csomag */}
+                    {}
                     <div className="col-md-4">
                         <div className="pricing-card">
                             <h3>Lorem Ipsum</h3>

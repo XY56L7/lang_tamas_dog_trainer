@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-12 text-center">
-                        {/* E-mail és telefonszám */}
+                        {}
                         <div className="mb-3">
                             <p className="mb-2">
                                 <i className="bi bi-envelope text-primary me-2"></i>
@@ -18,7 +18,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        {/* Copyright szöveg */}
+                        {}
                         <div className="copyright-text-wrap">
                             <p className="mb-0">
                                 <span className="copyright-text">
@@ -26,8 +26,8 @@ const Footer = () => {
                                     <a 
                                         href="https://pal-martin-portfolio.vercel.app/" 
                                         className="text-white"
-                                        target="_blank" // Új lapon nyílik meg
-                                        rel="noopener noreferrer" // Biztonsági okokból
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         Pál Martin
                                     </a>. Minden jog fenntartva.

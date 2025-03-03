@@ -3,26 +3,26 @@
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px; /* Csökkentett margin */
-    margin-left: 10px; /* Csökkentett margin */
-    margin-right: 10px; /* Csökkentett margin */
-    padding: 0.5rem 1rem; /* Csökkentett padding */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0.5rem 1rem;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Kisebb árnyék */
-    border-radius: 8px; /* Kisebb kerekítés */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .sticky-top.scrolled {
-    background-color: rgba(255, 255, 255, 0.95); /* Kicsit sötétebb háttér scrollozáskor */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Erősebb árnyék scrollozáskor */
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    margin-left: 20px; /* Csökkentett margin */
-    padding: 15px 0; /* Csökkentett padding */
-    font-size: 14px; /* Kisebb betűméret */
+    margin-left: 20px;
+    padding: 15px 0;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--dark);
@@ -31,7 +31,7 @@
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 10px 0; /* Csökkentett padding */
+    padding: 10px 0;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -72,12 +72,10 @@
         padding: 10px 0;
     }
 
-    /* Telefon ikon elrejtése telefonos nézetben */
     .phone-icon-circle {
         display: none !important;
     }
 
-    /* Logó középre igazítása telefonos nézetben */
     .navbar-brand {
         margin-left: auto;
         margin-right: auto;
@@ -87,23 +85,21 @@
 
 
 
-/* Telefon ikon stílusai */
 .phone-icon-circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Kör mérete */
-    height: 40px; /* Kör mérete */
-    background-color: #7AB730; /* Zöld háttér */
-    border-radius: 50%; /* Kör alakú */
-    color: white; /* Ikon színe */
-    font-size: 1.2rem; /* Ikon mérete */
+    width: 40px;
+    height: 40px;
+    background-color: #7AB730;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
 }
 
-/* Telefonszám konténer stílusai */
 .phone-number-container {
     position: relative;
-    padding: 0.5rem 1rem; /* Padding */
+    padding: 0.5rem 1rem;
 }
 
 .phone-number-container::before {
@@ -113,18 +109,18 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid #7AB730; /* Vékony zöld vonal */
-    border-radius: 25px; /* Ovális alak */
-    pointer-events: none; /* Ne blokkolja a kattintást */
+    border: 2px solid #7AB730;
+    border-radius: 25px;
+    pointer-events: none;
 }
 
 .phone-number {
-    color: #7AB730; /* Zöld szöveg */
-    text-decoration: none; /* Aláhúzás eltávolítása */
-    font-weight: 600; /* Szöveg vastagsága */
-    transition: color 0.3s ease; /* Sima átmenet */
+    color: #7AB730;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 .phone-number:hover {
-    color: #68a02b; /* Sötétebb zöld hover állapotban */
+    color: #68a02b;
 }

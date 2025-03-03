@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
   --primary: #7AB730;
   --secondary: #FFD33C;
@@ -59,13 +58,12 @@ body {
   z-index: 99;
 }
 
-/* TopBar ikonok zöld körvonallal */
 .bi-geo-alt::before,
 .bi-envelope-open::before,
 .bi-phone-vibrate::before {
-    color: transparent; /* Az ikon belseje átlátszó */
-    -webkit-text-stroke: 1px #7AB730; /* Zöld körvonal */
-    text-stroke: 1px #7AB730; /* Zöld körvonal */
+    color: transparent;
+    -webkit-text-stroke: 1px #7AB730;
+    text-stroke: 1px #7AB730;
 }
 
 .btn-play {
@@ -165,7 +163,6 @@ body {
 
 
 .bg-offer {
-  /* background: url(../img/offer.jpg) top right no-repeat; */
   background-size: cover;
 }
 

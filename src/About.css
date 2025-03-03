@@ -1,80 +1,74 @@
-/* About.css */
-/* General styling for hidden content before animation */
 .fade-in {
   opacity: 0;
-  transform: translateY(30px); /* Initial position below the viewport */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide */
+  transform: translateY(30px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .fade-in-visible {
   opacity: 1;
-  transform: translateY(0); /* Bring the element into view */
+  transform: translateY(0);
 }
 
 .nav-pills .nav-link {
-  background-color: transparent !important; /* Transparent background */
-  color: #7AB730 !important; /* Green text */
-  border-radius: 0.25rem; /* Rounded corners */
-  margin: 0 5px; /* Small space between the buttons */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  background-color: transparent !important;
+  color: #7AB730 !important;
+  border-radius: 0.25rem;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-pills .nav-link.active {
-  background-color: #7AB730 !important; /* Green background for active button */
-  color: white !important; /* White text */
+  background-color: #7AB730 !important;
+  color: white !important;
 }
 
-/* Styling for the bubble effect */
 .bubble-section {
-  border: 2px solid #7AB730; /* Green border */
-  border-radius: 15px; /* Rounded corners */
-  padding: 20px; /* Inner spacing */
-  margin-bottom: 30px; /* Space between sections */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  background-color: white; /* White background */
+  border: 2px solid #7AB730;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-/* Responsive adjustments for mobile view */
-/* About.css */
-/* Responsive adjustments for mobile view */
 @media (max-width: 767.98px) {
   .bubble-section {
-    padding: 15px; /* Smaller padding for mobile */
-    margin-bottom: 20px; /* Smaller margin for mobile */
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
   .display-5 {
-    font-size: 2rem; /* Smaller font size for mobile */
+    font-size: 2rem;
   }
 
   h1,h2,h3,h4{
-    font-size: 1.25rem; /* Smaller font size for mobile */
+    font-size: 1.25rem;
   }
   .nav-pills .nav-link {
-    font-size: 0.9rem; /* Smaller font size for mobile */
-    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 
   .tab-content p {
-    font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 0.9rem;
   }
 
   .position-relative {
-    height: auto; /* Auto height for images on mobile */
-    min-height: 200px; /* Minimum height to ensure visibility */
-    margin-bottom: 15px; /* Space below the image */
+    height: auto;
+    min-height: 200px;
+    margin-bottom: 15px;
   }
 
   .position-absolute {
-    height: 100%; /* Ensure the image fills the container */
-    object-fit: cover; /* Maintain aspect ratio */
+    height: 100%;
+    object-fit: cover;
   }
 
   .ps-5 {
-    padding-left: 1rem !important; /* Reduce left padding for mobile */
+    padding-left: 1rem !important;
   }
 
   .text-uppercase {
-    font-size: 1.5rem; /* Adjust uppercase text size for mobile */
+    font-size: 1.5rem;
   }
 }

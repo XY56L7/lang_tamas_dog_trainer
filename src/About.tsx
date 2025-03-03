@@ -7,9 +7,9 @@ const About = () => {
 
   useEffect(() => {
     const options = {
-      root: null, // Use the viewport as the root
+      root: null, 
       rootMargin: "0px",
-      threshold: 0.5, // Trigger when 50% of the element is visible
+      threshold: 0.5, 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -20,13 +20,11 @@ const About = () => {
       });
     }, options);
 
-    // Observe all elements with class '.fade-in'
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach((element) => {
       observer.observe(element);
     });
 
-    // Clean up the observer on unmount
     return () => {
       elements.forEach((element) => {
         observer.unobserve(element);
@@ -37,7 +35,7 @@ const About = () => {
   return (
     <div className="container-fluid px-4 py-5" id="about-section">
       <div className="container">
-        {/* First section (image left, text right) */}
+        {}
         <div className="row gx-5 bubble-section fade-in">
           <div className="col-lg-5 mb-5 mb-lg-0">
             <div className="position-relative h-100">
@@ -106,7 +104,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Second section (image right, text left) */}
+        {}
         <div className="row gx-5 flex-row-reverse mt-5 bubble-section fade-in">
           <div className="col-lg-5 mb-5 mb-lg-0">
             <div className="position-relative h-100">

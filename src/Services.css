@@ -1,20 +1,17 @@
-/* Services.css */
-/* General styles */
 .service-item {
-    border-radius: 15px; /* Lekerekített sarkok */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enyhe árnyék */
-    padding: 20px; /* Belső térköz */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Sima animáció hover esetén */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
-    transform: translateY(-5px); /* Enyhe emelkedés hover esetén */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Nagyobb árnyék hover esetén */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Fade-in animation */
 .fade-in {
-    animation: fadeInUp 3s ease-out forwards; /* Fade and slide up */
+    animation: fadeInUp 3s ease-out forwards;
 }
 
 @keyframes fadeInUp {
@@ -28,9 +25,8 @@
     }
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     .service-item {
-        padding: 15px; /* Kisebb padding telefonon */
+        padding: 15px;
     }
 }

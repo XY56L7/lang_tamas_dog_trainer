@@ -7,11 +7,10 @@ const Services = () => {
     useEffect(() => {
         const handleScroll = () => {
             const section = document.getElementById('services-section');
-            // Null check before using getBoundingClientRect
             if (section) {
                 const rect = section.getBoundingClientRect();
                 if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                    setIsVisible(true); // Element is in view
+                    setIsVisible(true);
                 }
             }
         };

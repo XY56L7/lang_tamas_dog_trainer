@@ -56,7 +56,7 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                {/* Logó csak asztali nézetben */}
+                {}
                 <a href="index.html" className="navbar-brand ms-lg-3 d-none d-lg-block">
                     <h1 className="m-0 text-uppercase text-dark">
                         <img 
@@ -68,7 +68,7 @@ const Header = () => {
                     </h1>
                 </a>
 
-                {/* Telefonszám és ikon mobilnézetben */}
+                {}
                 <div className="d-flex align-items-center d-lg-none">
                     <div className="phone-icon-circle me-2">
                         <i className="navbar-icon bi-telephone-plus"></i>
@@ -87,7 +87,7 @@ const Header = () => {
                         <a  className="nav-item nav-link" onClick={scrollToServices}>SZOLGÁLTATÁSOK</a>
                         <a  className="nav-item nav-link" onClick={scrollToPrices}>ÁRAK</a>
                         <div className="nav-item dropdown">
-                            {/* Dropdown tartalom */}
+                            {}
                         </div>
                     </div>
                 </div>
